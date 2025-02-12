@@ -109,11 +109,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="one"> <!-- Page 1: First Question -->
 	<div id="header" class="w3-container w3-flat-carrot">
-		<h1>Question 1</h1>
+		<h1>Question 1</h1> <!--Title of Page--> 
 	</div>
 	
     	<div id="content" class="w3-container">
-        <p>Are your eyes watery or itchy?</p>    
+        <p>Are your eyes watery or itchy?</p> <!-- asking question-->
     	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-black">Yes</a> <!-- Button for allergy response-->
          <a href="#two"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!-- Button for cold response--> 
 	</div>
@@ -122,43 +122,43 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div class="page" id="two"> <!-- Page 2: Seocond Question -->
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 2</h1>
+		<h1>Question 2</h1> <!--Title of Page-->
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p>Do you have a fever?</p>
+	<p>Do you have a fever?</p> <!-- asking question-->
 	<a href="#three"  onclick="coldAdd();" class="w3-btn w3-black">Yes</a> <!-- Button for cold response-->
         <a href="#three"  onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!-- Button for allergy response-->
 </div>	
 
 <div class="page" id="three"> <!-- Page 3: Third Question -->
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 3</h1>
+		<h1>Question 3</h1> <!--Title of Page-->
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p>Do you have a sore throat?</p>
+	<p>Do you have a sore throat?</p> <!-- asking question-->
 	<a href="#four"  onclick="coldAdd();" class="w3-btn w3-black">Yes</a> <!-- Button for Cold response-->
          <a href="#four"  onclick="allergyAdd();" class="w3-btn w3-black">No</a> <!-- Button for allergy response-->
 </div>
 
 	<div class="page" id="four"> <!-- Page 4: Fourth Question-->
 	<div class="w3-container w3-flat-carrot">
-		<h1>Question 4</h1>
+		<h1>Question 4</h1> <!--Title of Page-->	
 	</div>
 	
 	<div id="content" class="w3-container">
-	<p>Are your symptoms seasonal or chronic?</p>
+	<p>Are your symptoms seasonal or chronic?</p> <!-- asking question-->
 	<a href="#results"  onclick="allergyAdd();" class="w3-btn w3-black">Yes</a> <!--Button for allergy response-->
         <a href="#results"  onclick="coldAdd();" class="w3-btn w3-black">No</a> <!--Button for cold response-->
 </div>		
 	
 	<div class="page" id="results"> <!-- Results Page -->
 	<div class="w3-container w3-flat-carrot"> 
-		<h1>Results</h1>
-		<p id="resultMessage"></p>
+		<h1>Results</h1> <!-- Title of page-->
+		<p id="resultMessage"></p> <!-- This will display the result message-->
 		<script>
-			displayResults();
+			displayResults(); //Call the  display results function when results page is accessed
 		</script>
 	</div>
 </div>
