@@ -47,6 +47,25 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         function coldAdd(){
             cold_count = cold_count + 1;
         } //function that calculates the number of cold related responses
+	//function to display results based on counts
+	function displayResults(){
+	var resultMessage = "";
+
+	//if allergy count is higher, suggest allergies
+	if (allergy_count > cold_count) { 
+		resultMessage = "It seems like you might have allergies!" ;
+	}
+	//if cold count is higher, suggest cold
+	else if (cold_count > allergy_count) {
+		resultMessage = "It seems like you might have cold!" ; 
+	}
+	//if counts are equal, it's unclear
+	else { 
+		resultMessage = "It's unclear whether you are experiencing cold or allergies. Please consult a healthcare provider." ;
+	}
+	// Display the results on the result page
+	document.getElementById("results-message").innerHTML = resultMessage;
+	}
 
   </script>
 
